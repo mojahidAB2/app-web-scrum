@@ -1,5 +1,5 @@
 
-# 💻 Commandes Git Complètes – Style Mojahid
+# 💻 Commandes Git Complètes 
 
 ## 🔰 Démarrer une zone de travail
 📁 Répertoire du projet
@@ -8,7 +8,7 @@
    |---> git clone URL       => Cloner un dépôt depuis GitHub vers ton PC
 ```
 
-## 🔧 Travailler sur les modifications en cours
+# 🔧 Travailler sur les modifications en cours
 📁 Répertoire de travail
    |
    |---> git add fichier     => Ajouter un fichier à la zone de staging
