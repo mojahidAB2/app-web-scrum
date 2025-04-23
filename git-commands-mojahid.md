@@ -40,15 +40,4 @@
    |---> git switch branche  => Nouvelle façon de changer de branche
    |---> git tag             => Créer un tag (marque) sur un commit
 ```
-## 🌿 Gérer l’historique et les branches
-🌿 Branches et fusions
-   |
-   |---> git branch          => Lister/créer des branches
-   |---> git checkout        => Changer de branche
-   |---> git commit -m ""    => Enregistrer un snapshot du projet
-   |---> git merge branche   => Fusionner une branche dans une autre
-   |---> git rebase branche  => Réaligner l’historique des commits
-   |---> git reset --hard    => Revenir à un état antérieur
-   |---> git switch branche  => Nouvelle façon de changer de branche
-   |---> git tag             => Créer un tag (marque) sur un commit
-```
+
