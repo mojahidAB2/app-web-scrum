@@ -28,7 +28,7 @@
    |---> git status          => Voir les fichiers modifiés ou en attente
 ```
 
-## 🌿 Gérer l’historique et les branches
+## 🌿 Gérer l’historique et les branches 
 🌿 Branches et fusions
    |
    |---> git branch          => Lister/créer des branches
@@ -40,3 +40,12 @@
    |---> git switch branche  => Nouvelle façon de changer de branche
    |---> git tag             => Créer un tag (marque) sur un commit
 ```yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+
+## 🌐 Collaborer (avec GitHub ou autre dépôt distant)
+☁️ Connexion GitHub
+   |
+   |---> git remote add origin URL => Lier ton projet à un dépôt GitHub
+   |---> git fetch                 => Récupérer les commits sans les intégrer dans la branche
+   |---> git pull                  => Récupérer et intégrer les commits
+   |---> git push                  => Envoyer tes commits vers GitHub
+```
