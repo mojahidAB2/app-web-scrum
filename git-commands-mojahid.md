@@ -41,11 +41,3 @@
    |---> git tag             => Créer un tag (marque) sur un commit
 ```
 
-## 🌐 Collaborer (avec GitHub ou autre dépôt distant)
-☁️ Connexion GitHub
-   |
-   |---> git remote add origin URL => Lier ton projet à un dépôt GitHub
-   |---> git fetch                 => Récupérer les commits sans les intégrer dans la branche
-   |---> git pull                  => Récupérer et intégrer les commits
-   |---> git push                  => Envoyer tes commits vers GitHub
-```
