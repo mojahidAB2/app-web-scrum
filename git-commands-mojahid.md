@@ -39,5 +39,4 @@
    |---> git reset --hard    => Revenir à un état antérieur
    |---> git switch branche  => Nouvelle façon de changer de branche
    |---> git tag             => Créer un tag (marque) sur un commit
-```
-
+```yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
