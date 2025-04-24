@@ -84,3 +84,4 @@
 | `git config --global user.email "mail"`       | Définir email |
 | `git stash`                 | Sauver modifs non commit |
 | `git stash pop`             | Restaurer les modifs |
+
