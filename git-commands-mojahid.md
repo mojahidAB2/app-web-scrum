@@ -1,51 +1,84 @@
+# 📘 Fiche Complète des Commandes Git (de A à Z)
 
-# 💻 Commandes Git Complètes 
+## 🔰 Initialisation & Clone
+| Commande              | Description                              |
+|-----------------------|----------------------------------------  |
+| `git init`            | Initialiser un nouveau dépôt Git local   |
+| `git clone URL`       | Cloner un dépôt distant vers ton PC      |
 
-## 🔰 Démarrer une zone de travail
-📁 Répertoire du projet
-   |
-   |---> git init            => Créer un nouveau dépôt à partir de zéro
-   |---> git clone URL       => Cloner un dépôt depuis GitHub vers ton PC
-```
+## 🔧 Travailler sur les Fichiers
+| Commande                    | Description                        |
+|-----------------------------|------------------------------------|
+| `git add fichier`           | Ajouter un fichier au staging      |
+| `git add .`                 | Ajouter tous les fichiers modifiés |
+| `git mv ancien nouveau`     | Renommer un fichier                |
+| `git restore fichier`       | Restaurer un fichier               |
+| `git rm fichier`            | Supprimer un fichier               |
+| `git clean -f`              | Supprimer les fichiers non suivis  |
 
-# 🔧 Travailler sur les modifications en cours
-📁 Répertoire de travail
-   |
-   |---> git add fichier     => Ajouter un fichier à la zone de staging
-   |---> git mv ancien nouveau => Renommer un fichier (ou dossier)
-   |---> git restore fichier => Restaurer la version précédente d’un fichier
-   |---> git rm fichier      => Supprimer un fichier du projet et de Git
-```
+## 📝 Commits
+| Commande                  | Description                |
+|---------------------------|----------------------------|
+| `git commit -am "msg"`    | Ajouter + commit direct    |
+| `git commit --amend`      | Modifier le dernier commit |
 
-## 🔍 Examiner l’historique et l’état
-📂 Dépôt Git
-   |
-   |---> git bisect          => Trouver quand un bug est apparu (recherche binaire)
-   |---> git diff            => Voir les différences entre les commits
-   |---> git grep "texte"    => Chercher un mot dans le code
-   |---> git log             => Afficher l’historique des commits
-   |---> git show hash       => Détails d’un commit spécifique
-   |---> git status          => Voir les fichiers modifiés ou en attente
-```
+## 🌿 Branches & Historique
+| Commande                      | Description            |
+|-------------------------------|------------------------|
+| `git branch`                  | Lister les branches    |
+| `git branch nom`              | Créer une branche      |
+| `git switch nom`              | Aller à une branche    |
+| `git checkout -b nom`         | Créer + switch branche |
+| `git merge branche`           | Fusionner une branche  |
+| `git rebase branche`          | Réaligner les commits  |
+| `git log`                     | Historique complet     |
+| `git log --oneline`           | Historique résumé      |
+| `git diff`                    | Voir différences       |
+| `git show hash`               | Voir détails commit    |
 
-## 🌿 Gérer l’historique et les branches 
-🌿 Branches et fusions
-   |
-   |---> git branch          => Lister/créer des branches
-   |---> git checkout        => Changer de branche
-   |---> git commit -m ""    => Enregistrer un snapshot du projet
-   |---> git merge branche   => Fusionner une branche dans une autre
-   |---> git rebase branche  => Réaligner l’historique des commits
-   |---> git reset --hard    => Revenir à un état antérieur
-   |---> git switch branche  => Nouvelle façon de changer de branche
-   |---> git tag             => Créer un tag (marque) sur un commit
-```yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+## 🔙 Restaurer & Réinitialiser
+| Commande                         | Description        |
+|----------------------------------|--------------------|
+| `git reset --hard`               | Revenir à un état  |
+| `git reset fichier`              | Unstage fichier    |
+| `git restore --staged fichier`   | Retirer du staging |
 
-## 🌐 Collaborer (avec GitHub ou autre dépôt distant)
-☁️ Connexion GitHub
-   |
-   |---> git remote add origin URL => Lier ton projet à un dépôt GitHub
-   |---> git fetch                 => Récupérer les commits sans les intégrer dans la branche
-   |---> git pull                  => Récupérer et intégrer les commits
-   |---> git push                  => Envoyer tes commits vers GitHub
-```
+## 🔎 Recherche & Filtres
+| Commande                 | Description                      |
+|--------------------------|----------------------------------|
+| `git grep "mot"`         | Chercher mot dans le code        |
+| `git bisect`             | Trouver un bug dans l’historique |
+
+## 🔖 Tags
+| Commande              | Description      |
+|-----------------------|------------------|
+| `git tag`             | Voir les tags    |
+| `git tag v1.0`        | Créer un tag     |
+| `git tag -d v1.0`     | Supprimer un tag |
+
+## 🌐 Remote avec GitHub
+| Commande                                  | Description                    |
+|-------------------------------------------|--------------------------------|
+| `git remote add origin URL`               | Lier dépôt distant             |
+| `git remote -v`                           | Voir les remote                |
+| `git fetch`                               | Récupérer sans intégrer        |
+| `git pull`                                | Récupérer + intégrer           |
+| `git push`                                | Pousser vers GitHub            |
+| `git push origin branche`                 | Push vers une branche          |
+| `git push --set-upstream origin branche`  | Lier branche locale à distante |
+| `git push origin --delete branche`        | Supprimer une branche distante |
+
+## 👥 Collaboration
+| Action / Commande                        | Description              |
+|------------------------------------------|--------------------------|
+| `git checkout -b branche`                | Nouvelle branche pour PR |
+| `git push origin branche`                | Envoyer au dépôt         |
+
+## 💡 Astuces Bonus
+| Commande                                 | Description              |
+|------------------------------------------|--------------------------|
+| `git config --global user.name "Nom"`    | Définir nom utilisateur  |
+| `git config --global user.email "mail"`  | Définir email            |
+| `git stash`                              | Sauver modifs non commit |
+| `git stash pop`                          | Restaurer les modifs     |
+
